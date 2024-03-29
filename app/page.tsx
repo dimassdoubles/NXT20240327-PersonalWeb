@@ -1,9 +1,9 @@
-import Link from "next/link"
+import Hero from "@/components/hero"
 
 export default function Home()  {
   return (
-    <>
-    <p>Home Page</p>
-    </>
+    <main>
+      <Hero/>
+    </main>
   )
 }
