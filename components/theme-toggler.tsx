@@ -19,7 +19,7 @@ const ThemeToggler = () => {
     const { theme, setTheme } = useTheme()
 
     return (
-        <Button variant="outline" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+        <Button className="bg-transparent dark:bg-transparent" variant="secondary" size="lg" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             <SunIcon className={toggleStyle({type: "light"})}/>
             <MoonIcon className={toggleStyle({type: "dark"})}/>
         </Button>

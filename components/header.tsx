@@ -22,7 +22,7 @@ const Header = () => {
     })
 
     return (
-     <header className={`${header? 'py-4 bg-white shadow-lg dark:bg-accent' : 'py-6 dark:bg-transparent'} sticky top-0 z-30 transition-all ${pathName() === "/" && "bg-white"}`}>
+     <header className="backdrop-filter backdrop-blur-lg bg-white dark:bg-[#020817] bg-opacity-70 dark:bg-opacity-70 sticky top-0 z-30 transition-all">
         <div className="container mx-auto">
          <div className="flex justify-between items-center">
           <Logo/> 
@@ -34,12 +34,13 @@ const Header = () => {
               linkStyles="relative hover:text-primary transition-all" 
               underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
             />
-            <ThemeToggler/>
-
+            
             {/* mobile nav */}
             <div className="xl:hidden">
               <MobileNav/>
             </div>
+            
+            <ThemeToggler/>
 
           </div>
 
