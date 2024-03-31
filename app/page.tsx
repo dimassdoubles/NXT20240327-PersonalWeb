@@ -1,10 +1,9 @@
-import Link from "next/link"
+import Hero from "@/components/hero"
 
 export default function Home()  {
   return (
-    <>
-    <p>Hello World!</p>
-    <Link href="/posts">Post Page</Link>
-    </>
+    <main>
+      <Hero/>
+    </main>
   )
 }
